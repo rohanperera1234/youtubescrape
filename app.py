@@ -49,7 +49,7 @@ def scrape_youtube_videos():
 def time_until_next_run():
     sri_lanka_tz = pytz.timezone('Asia/Colombo')
     current_time = datetime.now(sri_lanka_tz)
-    next_run_time = current_time.replace(hour=13, minute=12, second=0, microsecond=0)
+    next_run_time = current_time.replace(hour=14, minute=10, second=0, microsecond=0)
     if current_time >= next_run_time:
         next_run_time += timedelta(days=1)
     time_remaining = next_run_time - current_time
